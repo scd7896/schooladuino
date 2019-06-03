@@ -39,6 +39,7 @@
 
  
 void gameOverSing() { 
+
   pinMode(PIEZO, OUTPUT);  
   int song[] = { c4, e4, a4, b4, e4, g4s, b4, c5, e4, e5, d5s, e5, d5s, e5, b4, d5, c5, a4, c4, e4, a4, b4, e4, c5, b4, a4 };
   int i;
@@ -46,4 +47,34 @@ void gameOverSing() {
     tone(PIEZO, song[i], 125);
     delay(125);
   }
+}
+
+void gameStartSing(){
+  int speaker = 9;
+  int pause = 325;
+  pinMode(speaker, OUTPUT);
+  tone(speaker,392,250);
+delay(pause);
+noTone(speaker);
+tone(speaker,392,250);
+delay(pause);
+noTone(speaker);
+tone(speaker,440,250);
+delay(pause);
+noTone(speaker);
+tone(speaker,440,250);
+delay(pause);
+noTone(speaker);
+tone(speaker,392,250);
+delay(pause);
+noTone(speaker);
+tone(speaker,392,250);
+delay(pause);
+noTone(speaker);
+tone(speaker,330,250);
+delay(pause);
+noTone(speaker);
+tone(speaker,0,250);
+delay(pause);
+noTone(speaker);
 }

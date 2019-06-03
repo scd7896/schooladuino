@@ -35,6 +35,7 @@ void Te_Init()
   pinMode(BUTTON_RIGHT, INPUT_PULLUP);
   pinMode(BUTTON_ROT, INPUT_PULLUP);
   pinMode(BUTTON_DOWN, INPUT_PULLUP);//
+  gameStartSing();
 }
 
 void Te_Draw()

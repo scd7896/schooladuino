@@ -15,6 +15,7 @@ void setup() {
     ; // wait for serial port to connect. Needed for native USB port only
   }
   Serial.println("Loading ...");
+
   Dp_Init();
   Te_Init();
   Serial.println(random(9, 15) * (10 + pow(3,1) * 10));
